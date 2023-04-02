@@ -10,7 +10,7 @@ public class Main {
         MyThread t1 = new MyThread();
         t1.start();
 
-        PrintWriter p = new PrintWriter(System.out);
+        PrintWriter p = new PrintWriter(System.out); //Note : this is much slower compared to System.out.println
         for(int i=0; i<10; i++){
             p.println("Main Thread");
             p.flush(); //If nothing is getting printed to the screen,

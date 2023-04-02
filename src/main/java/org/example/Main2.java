@@ -12,7 +12,7 @@ public class Main2 {
 
         PrintWriter p = new PrintWriter(System.out);
         for(int i=0; i<10; i++){
-            p.println("Main Thread");
+            p.println("Main Thread-2");
             p.flush(); //If nothing is getting printed to the screen,
             // it's possible that the output is being buffered and not
             // immediately flushed to the console. You can try manually
