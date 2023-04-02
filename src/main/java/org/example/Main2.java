@@ -1,14 +1,14 @@
 package org.example;
 
 import java.io.PrintWriter;
-import java.util.Scanner;
 
-public class Main {
+public class Main2 {
     public static void main(String[] args) {
-        System.out.println("Hello world! We're in main thread");
+        System.out.println("Hello world! We're in main2 thread");
 
-        MyThread t1 = new MyThread();
-        t1.start();
+        MyRunnable2 r = new MyRunnable2();
+        Thread t = new Thread(r);
+        t.start();
 
         PrintWriter p = new PrintWriter(System.out);
         for(int i=0; i<10; i++){
